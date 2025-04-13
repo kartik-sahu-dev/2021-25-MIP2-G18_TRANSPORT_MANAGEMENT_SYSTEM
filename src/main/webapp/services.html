@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SISTrahi - Services</title>
+    <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="images1/Logo.png">
+    <link rel="stylesheet" type="text/css" href="services.css">
+    <link rel="stylesheet" href="common.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bitter:wght@500&display=swap"
+        rel="stylesheet">
+    <style>    
+      
+    </style>
+</head>
+
+<body>
+    <section>
+        <div class="container">
+            <nav id="navbar">
+                <div id="logo">
+                    <img src="images1/Logo.png" alt="SISTarthi.com">
+                </div>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search-bus.html">Search Bus</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+
+    <section>
+        <div id="imgDiv">
+            <div id="practice">
+                <div class="pr">
+                    <h1 class="divHeadings">ROUTES AND NUMBER OF THE SISTec BUSES</h1>
+                    <div class="divImage">
+                        <!-- <img src="roughImages/routes.jpg" alt="routes"> -->
+                    </div>
+                    <p>At SISTrahi, we offer a comprehensive list of routes and bus numbers for SISTec buses,
+                        catering to
+                        the diverse needs of students, faculty, and staff. Each bus is assigned a unique number,
+                        allowing
+                        users to track their preferred buses using our real-time bus tracking system. With the ability
+                        to
+                        search and filter buses, users can access schedules and locations conveniently. Timely
+                        notifications
+                        keep users informed about route changes or delays, ensuring a smooth travel experience. Our
+                        dedication to providing a superior bus tracking service reflects in our commitment to optimizing
+                        your journey at SISTec. Count on us for a seamless and reliable transportation experience.</p>
+                </div>
+                <div class="pr">
+                    <h1 class="divHeadings">REAL-TIME LOCATIONS OF THE SISTec BUSES</h1>
+                    <div class="divImage" id="location">
+                        <!-- <img src="roughImages/realLocation.jpg" alt="location"> -->
+                    </div>
+                    <p>At SISTrahi, we provide real-time locations of SISTec buses using advanced GPS
+                        technology. Our
+                        user-friendly interface allows you to track the live positions of active buses on their routes.
+                        This
+                        feature enables you to plan your commute efficiently, reduce waiting times, and stay informed
+                        about
+                        estimated arrival times at bus stops. Whether you're a student or faculty member, our real-time
+                        bus
+                        tracking system ensures a seamless and stress-free transportation experience, enhancing your
+                        journey
+                        at SISTec. Never miss a bus again with our reliable and accurate real-time bus tracking service.
+
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id et laudantium</p>
+
+                </div>
+            </div>
+    </section>
+
+    <section id="serviceHeading">
+        <marquee scrollamount="18" behavior="seamless" direction="right">
+            <div class="car">
+                <img src="images1/car.png" alt="car" id="marCar">
+            </div>
+            <div class="wheel">
+                <img src="images1/wheel.png" alt="wheel" class="back-wheel">
+                <img src="images1/wheel.png" alt="wheel" class="front-wheel">
+            </div>
+        </marquee>
+
+
+
+    </section>
+
+
+
+
+
+    </section>
+
+    <script>
+        // Add smooth scrolling behavior to mouse wheel events
+        window.addEventListener("wheel", function (event) {
+            event.preventDefault(); // Prevent default scrolling behavior
+            var delta = event.deltaY || event.detail || (-event.wheelDelta);
+            var scrollSpeed = 300; // Adjust scroll speed as desired
+            if (delta < 0) {
+                // Scrolling up
+                window.scrollBy({
+                    top: -scrollSpeed,
+                    behavior: "smooth"
+                });
+            } else {
+                // Scrolling down
+                window.scrollBy({
+                    top: scrollSpeed,
+                    behavior: "smooth"
+                });
+            }
+        });
+    </script>
+</body>
+<footer>
+    &copy; 2023 SISTrahi. All rights reserved.
+</footer>
+
+</html>

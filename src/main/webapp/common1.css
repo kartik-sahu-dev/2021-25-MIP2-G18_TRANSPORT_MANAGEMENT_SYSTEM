@@ -1,0 +1,135 @@
+/* Reset default margin and padding */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+  
+  body {
+    /* background-color: #555; */
+    /* background-image: url('/roughImages/serviceBack1.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    /* background-image: linear-gradient(to right, #243949 0%, #517fa4 100%); */
+   
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);
+    background-image: linear-gradient(to top, #dad4ec 0%, #dad4ec 1%, #f3e7e9 100%);
+    background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
+  }
+  
+  /* Navigation Bar Styling */
+  #navbar {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  /* Navigation Bar: Logo and Image Styling */
+  #logo {
+    margin: 10px 34px;
+  }
+  
+  #logo img {
+    height: 59px;
+    margin: 3px 6px;
+    border-radius: 50%;
+    background: linear-gradient(red, blue, green, rgb(214, 18, 155), rgb(189, 230, 23));
+    padding: 2px;
+  }
+  
+  /* Navigation Bar: List Styling */
+  #navbar ul {
+    display: flex;
+    font-family: 'Bitter', serif;
+    justify-content: flex-end;
+    margin-right: 30px;
+  }
+  
+  #navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+  }
+  
+  #navbar ul li a:hover {
+    color: black;
+    background-color: white;
+  }
+  
+  
+  /* Media Query for Responsive Navigation */
+  @media (max-width: 768px) {
+    /* Other styles for mobile screens */
+  
+    #navbar {
+      flex-wrap: wrap;
+      height: auto;
+      padding-bottom: 10px;
+      /* Add some space at the bottom */
+    }
+  
+    #logo {
+      margin: 10px auto;
+    }
+  
+    #navbar ul {
+      justify-content: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
+      /* Allow list items to wrap to the next line */
+    }
+  
+    #navbar ul li {
+      margin: 5px;
+      flex: 1 0 100%;
+      /* Each list item takes full width */
+      text-align: center;
+    }
+  
+    #navbar ul li a {
+      padding: 8px 16px;
+    }
+  
+    #navbar ul li:nth-child(n) {
+      display: block;
+      /* Show all list items */
+    }
+  }
+
+  input::placeholder{
+      font-size: 20px; 
+      font-weight: bolder; 
+      word-spacing: 7px;
+      font-weight: 15px;
+}
+
+
+
+  footer {
+    background-color: black;
+    color: white;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0px;
+    height: 4vh;
+    width: 100vw;
+    padding: 2px;
+}

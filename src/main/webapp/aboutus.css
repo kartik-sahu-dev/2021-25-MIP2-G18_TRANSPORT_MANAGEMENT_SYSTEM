@@ -1,0 +1,46 @@
+.mainContainer{
+  display: flex;
+}
+.box{
+  width: 50%;
+  height: 42.3em;
+  border:3px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+#box1{
+  /* padding: 3px; */
+}
+
+#box1 img{
+  height: 70%;
+  width: 100%;
+  align-self: center;
+  border-radius: 0px 0px 25px 25px;
+  /* background: linear-gradient(red, blue,green, rgb(214, 18, 155), rgb(189, 230, 23)); */
+  /* padding: 5px 7px; */
+  /* filter: drop-shadow(10px 10px 10px red); */
+
+}
+#box1 p{
+  height: 30%;
+  font-size: 1.2em;
+  text-align: justify;
+  overflow: auto;
+}
+
+#box2 img{
+  height: 100%;
+}
+
+@media (max-width:768px)
+{
+  .mainContainer{
+      flex-direction: column;
+  }
+  .box{
+      height: fit-content;
+      width: auto;
+  }
+}

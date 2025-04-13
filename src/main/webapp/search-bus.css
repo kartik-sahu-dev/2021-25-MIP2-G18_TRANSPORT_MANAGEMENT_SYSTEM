@@ -1,0 +1,246 @@
+
+body {
+  background-color: #555;
+  /* background-image: url('/roughImages/serviceBack1.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+#serviceHeading {
+  /* border: 2px solid red; */
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  /* overflow-y: hidden; */
+  /* margin-top: 10px; */
+  background-image: url('./images1/road.jpg');
+  background-repeat: repeat-x;
+  /* animation: highway 5s linear infinite; */
+}
+
+.mainContainer {
+  /* margin-top: 100px; */
+
+  width: 100%;
+  height: 76vh;
+  border: 5px inset black;
+  /* border-radius: 5px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: linear-gradient(red, blue, green, rgb(214, 18, 155), rgb(189, 230, 23));
+
+  /* background: linear-gradient(red, blue, green, rgb(214, 18, 155), rgb(189, 230, 23)); */
+}
+
+.box {
+  width: 30em;
+  height: 25em;
+  border: 5px outset rgb(26, 26, 28);
+  margin: 0.5em;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+  box-shadow: 2px 3px 2px 3px;
+  background-color: rgb(41, 39, 39);
+
+}
+
+.box:hover {
+  box-shadow: 3px 4px 3px 5px;
+  width: 30.1em;
+  height: 30.1em;
+}
+
+
+.miniHeading {
+  background-color: black;
+  color: white;
+  width: 100%;
+  /* height: 2em; */
+  height: fit-content;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.3em;
+
+
+  transition: all 3s ease-in-out;
+}
+
+.miniHeading:hover {
+  /* width: 30.8em; */
+  /* height: 100%; */
+  /* background-color: rgb(223, 21, 6);
+  color: rgb(11, 11, 11); */
+}
+
+
+.miniHeading::selection {
+  background-color: rgb(19, 12, 211);
+}
+
+.images img {
+  width: 100%;
+  height: 10em;
+}
+
+.searchForm {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: row;
+  flex-wrap: nowrap;
+  /* border: 3px inset black; */
+  height: fit-content;
+}
+
+.searchForm form {
+  /* border: 2px solid rgb(219, 11, 194); */
+  width: 100%;
+  height: 2.5em;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  /* padding: 3px 5px; */
+
+}
+
+.searchForm input {
+  width: 65%;
+  height: 100%;
+  /* border: 2px inset black; */
+}
+
+.searchForm button {
+  width: 34%;
+  height: 100%;
+  /* border: 2px solid blue; */
+  /* border-radius: 8px; */
+  font-size: 1.5em;
+  font-family: 'Bitter', serif;
+}
+
+.searchForm button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.searchPara {
+  /* background-color: black; */
+}
+
+.searchPara p {
+padding: 3px 4px;
+  font-size: 1.3em;
+  text-align: justify;
+  color: white;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  height: 4vh;
+  width: 100vw;
+  padding: 2px;
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+  .mainContainer {
+      flex-direction: column;
+      /* margin-top: 500px; */
+      height: fit-content;
+  }
+
+  .box {
+      width: 100%;
+      margin: 5px;
+      height: fit-content;
+  }
+
+  .serviceHeading {
+      height: fit-content;
+  }
+}
+
+#marCar {
+width: 400px;
+height: 125px;
+left: 50%;
+overflow: hidden;
+/* border: 5px solid green; */
+
+}
+
+.car img {
+width: 100%;
+animation: car 1s linear infinite;
+}
+
+@keyframes car {
+100% {
+  transform: translateY(-1px);
+}
+
+50% {
+  transform: translateY(1px);
+}
+
+0% {
+  transform: translateY(-1px);
+}
+
+}
+
+.wheel {
+overflow: auto;
+/* position: sticky;
+bottom: 1px; */
+/* border: 5px solid red;   */
+/* position:absolute; */
+/* z-index:1; */
+margin-top: -60px;
+overflow: hidden;
+
+
+
+}
+
+.wheel img {
+/* margin-top: -10px; */
+width: 60px;
+height: 60px;
+animation: wheel 1s linear infinite;
+
+}
+
+.back-wheel {
+left: 40px;
+position: relative;
+/* position: absolute; */
+}
+
+.front-wheel {
+left: 223px;
+position: relative;
+/* position: absolute; */
+}
+
+@keyframes wheel {
+100% {
+  transform: rotate(360deg);
+}
+}

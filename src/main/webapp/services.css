@@ -1,0 +1,293 @@
+/* Reset default margin and padding */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #555;
+  /* background-image: url('/roughImages/serviceBack1.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+}
+
+/* Navigation Bar Styling */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Navigation Bar: Logo and Image Styling */
+#logo {
+  margin: 10px 34px;
+}
+
+#logo img {
+  height: 59px;
+  margin: 3px 6px;
+  border-radius: 50%;
+  background: linear-gradient(red, blue, green, rgb(214, 18, 155), rgb(189, 230, 23));
+  padding: 2px;
+}
+
+/* Navigation Bar: List Styling */
+#navbar ul {
+  display: flex;
+  font-family: 'Baloo Bhai', cursive;
+  justify-content: flex-end;
+  margin-right: 30px;
+}
+
+#navbar ul li {
+  list-style: none;
+  font-size: 1.3rem;
+}
+
+#navbar ul li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+}
+
+/* Media Query for Responsive Navigation */
+@media (max-width: 768px) {
+  /* Other styles for mobile screens */
+
+  #navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding-bottom: 10px;
+    /* Add some space at the bottom */
+  }
+
+  #logo {
+    margin: 10px auto;
+  }
+
+  #navbar ul {
+    justify-content: center;
+    margin: 10px 0;
+    flex-wrap: wrap;
+    /* Allow list items to wrap to the next line */
+  }
+
+  #navbar ul li {
+    margin: 5px;
+    flex: 1 0 100%;
+    /* Each list item takes full width */
+    text-align: center;
+  }
+
+  #navbar ul li a {
+    padding: 8px 16px;
+  }
+
+  #navbar ul li:nth-child(n) {
+    display: block;
+    /* Show all list items */
+  }
+}
+
+
+
+/* Image Styling */
+#imgDiv {
+  /* margin-top: 100px; */
+  /* border: 10px solid red; */
+  background-image: url('images1/serviceBack1.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  background-position: center center;
+  height: 533px;
+}
+
+
+
+#practice {
+  padding-top: 80px;
+  /* overflow: hidden; */
+  /* display: flex; */
+}
+
+.divHeadings {
+  background-color: #1d1c1c;
+  opacity: 0.8;
+  text-align: center;
+  color: rgba(121, 224, 36, 0.849);
+  border-radius: 5px 5px 0px 0px;
+}
+
+
+.pr {
+  display: inline-block;
+  width: 49.8%;
+  height: auto;
+  background: linear-gradient(red, blue, green, rgb(214, 18, 155), rgb(189, 230, 23));
+  padding: 10px;
+  border-radius: 10px;
+  /* opacity: 0.8; */
+  /* border: 5px solid rgb(145, 180, 20); */
+  color: aqua;
+  text-align: justify;
+  font-size: larger;
+  /* margin: 0px 10px; */
+
+}
+
+.pr p {
+  font-size: larger;
+  background-color: rgb(32, 29, 29);
+  padding: 3px 5px;
+  opacity: 0.8;
+}
+
+.divImage {
+  padding: 0px 5px;
+  width: 100%;
+  height: 150px;
+  /* border: 3px solid green; */
+  /* border-radius: 5px; */
+
+  background-image: url('images1/routes.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.7;
+}
+
+#location {
+  background-image: url('images1/realLocation.jpg');
+}
+
+
+
+@media (max-width:990px) {
+  #practice{
+    flex-direction: column;
+  }
+  .pr {
+    display: block;
+    width: 100%;
+    height: inherit;
+    margin-top: 5px;
+  }
+
+  #imgDiv {
+    height: fit-content;
+  }
+
+  
+}
+
+#serviceHeading {
+  /* border: 2px solid red; */
+  width: auto;
+  height: 140px;
+  overflow-y: hidden;
+  /* margin-top: 10px; */
+  background-image: url('images1/road.jpg');
+  background-repeat: repeat-x;
+  /* animation: highway 5s linear infinite; */
+}
+
+#marCar {
+  width: 400px;
+  height: 125px;
+  left: 50%;
+  overflow: hidden;
+  /* border: 5px solid green; */
+
+}
+
+.car img {
+  width: 100%;
+  animation: car 1s linear infinite;
+}
+
+@keyframes car {
+  100% {
+    transform: translateY(-1px);
+  }
+
+  50% {
+    transform: translateY(1px);
+  }
+
+  0% {
+    transform: translateY(-1px);
+  }
+
+}
+
+.wheel {
+  overflow: auto;
+  /* position: sticky;
+  bottom: 1px; */
+  /* border: 5px solid red;   */
+  /* position:absolute; */
+  /* z-index:1; */
+  margin-top: -60px;
+  overflow: hidden;
+
+
+
+}
+
+.wheel img {
+  /* margin-top: -10px; */
+  width: 60px;
+  height: 60px;
+  animation: wheel 1s linear infinite;
+
+}
+
+.back-wheel {
+  left: 40px;
+  position: relative;
+  /* position: absolute; */
+}
+
+.front-wheel {
+  left: 223px;
+  position: relative;
+  /* position: absolute; */
+}
+
+@keyframes wheel {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* Footer Styling */
+footer {
+  background-color: #1d1c1c;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: sticky;
+  bottom: 2px;
+  width: 100%;
+  height: 15px;
+
+}

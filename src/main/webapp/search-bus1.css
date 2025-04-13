@@ -1,0 +1,269 @@
+
+body {
+  background-color: white;
+  /* background-image: url('/roughImages/serviceBack1.jpg'); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  /* background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%); */
+}
+
+#serviceHeading {
+  /* border: 2px solid red; */
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  /* overflow-y: hidden; */
+  /* margin-top: 10px; */
+  background-image: url('./images1/road.jpg');
+  background-repeat: repeat-x;
+  /* animation: highway 5s linear infinite; */
+}
+
+.mainContainer {
+  /* margin-top: 100px; */
+
+  width: 100%;
+  height: 76vh;
+  /* border-top: 5px inset rgba(0, 0, 0, 0.481); */
+  /* border-radius: 15px; */
+  display: flex;
+  margin-top: 0px;
+  justify-content: space-around;
+  align-items: center;
+  /* background-image: linear-gradient(to top, #09203f 0%, #537895 100%); */
+    /* background: linear-gradient(red, blue, green, rgb(214, 18, 155), rgb(189, 230, 23)); */
+
+  /* background: linear-gradient(red, blue, green, rgb(214, 18, 155), rgb(189, 230, 23)); */
+}
+
+.box { 
+  width: 400px;
+  height: 400px;
+  /* border: 5px outset rgb(26, 26, 28); */
+  border: 1px solid black;
+  margin: 0.5em;
+  display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  /* align-items: center; */
+  /* box-shadow: 2px 3px 2px 3px; */
+  box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+  /* background-color: rgb(41, 39, 39); */
+  /* background-color: white; */
+  backdrop-filter:brightness(60%);
+  border-radius: 8px;
+
+}
+
+.box:hover {
+  box-shadow: 4px 3px 4px 0px;
+  /* width: 30.1em;
+  height: 30.1em; */
+ 
+}
+
+
+.miniHeading {
+  background-color: black;
+  color: white;
+  width: 100%;
+  /* height: 2em; */
+  height: fit-content;
+  text-align: center;
+  font-size: 1.3em;
+  padding: 0.3em;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+
+  transition: all 3s ease-in-out;
+}
+
+.miniHeading:hover {
+  /* width: 30.8em;
+  height: 100%;
+  background-color: rgb(223, 21, 6);
+  color: rgb(11, 11, 11); */
+}
+
+
+.miniHeading::selection {
+  background-color: rgb(19, 12, 211);
+}
+
+.images img {
+  width: 100%;
+  height: 13em;
+}
+
+
+.searchForm {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  /* flex-direction: row; */
+  flex-wrap: nowrap;
+  /* border: 3px inset black; */
+  height: fit-content;
+}
+
+.searchForm form {
+  /* border: 2px solid rgb(219, 11, 194); */
+  width: 100%;
+  height: 2.5em;
+  margin-top: 15px;
+  /* display: flex; */
+  justify-content: center;
+  flex-wrap: nowrap;
+  text-align: center;
+  /* padding: 3px 5px; */
+
+}
+
+.searchForm input {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  border: 2px inset black;
+}
+
+.searchForm button {
+  width: 34%;
+  height: 100%;
+  border: 2px solid white;
+  border-radius: 8px;
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.5em;
+  font-family: 'Bitter', serif;
+  
+}
+
+.searchForm button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+
+.searchPara{
+  /* background-color: black; */
+}
+
+.searchPara p {
+padding: 3px 4px;
+  font-size: 1.3em;
+  text-align: justify;
+  color: white;
+}
+
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0px;
+  height: 9vh;
+  width: 100vw;
+  padding: 2px;
+}
+
+footer p{
+  margin-top: 15px;
+  font-weight: bolder;
+}
+
+
+
+
+
+
+@media (max-width:768px) {
+  .mainContainer {
+      flex-direction: column;
+      /* margin-top: 500px; */
+      height: fit-content;
+  }
+
+  .box {
+      width: 100%;
+      margin: 5px;
+      height: fit-content;
+  }
+
+  .serviceHeading {
+      height: fit-content;
+  }
+}
+
+#marCar {
+width: 400px;
+height: 125px;
+left: 50%;
+overflow: hidden;
+/* border: 5px solid green; */
+
+}
+
+.car img {
+width: 100%;
+animation: car 1s linear infinite;
+}
+
+@keyframes car {
+100% {
+  transform: translateY(-1px);
+}
+
+50% {
+  transform: translateY(1px);
+}
+
+0% {
+  transform: translateY(-1px);
+}
+
+}
+
+.wheel {
+overflow: auto;
+/* position: sticky;
+bottom: 1px; */
+/* border: 5px solid red;   */
+/* position:absolute; */
+/* z-index:1; */
+margin-top: -60px;
+overflow: hidden;
+
+
+
+}
+
+.wheel img {
+/* margin-top: -10px; */
+width: 60px;
+height: 60px;
+animation: wheel 1s linear infinite;
+
+}
+
+.back-wheel {
+left: 40px;
+position: relative;
+/* position: absolute; */
+}
+
+.front-wheel {
+left: 223px;
+position: relative;
+/* position: absolute; */
+}
+
+@keyframes wheel {
+100% {
+  transform: rotate(360deg);
+}
+}

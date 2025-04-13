@@ -1,0 +1,72 @@
+
+
+div.main{
+  width: 400px;
+  margin: 100px auto 0px auto;
+}
+h2{
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+div.register{
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  font-size: 18px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+  color: #fff;
+
+}
+form#register{
+  margin: 40px;
+}
+label{
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  /* font-style: italic; */
+}
+input#name{
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: 0;
+  padding: 7px;
+  background-color: #fff;
+  box-shadow: inset 1px 1px 5px rgba(0,0,0,0.3);
+
+}
+input#submit{
+  width: 200px;
+  padding: 7px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  background-color: aqua;
+  color: green;
+  cursor: pointer;
+  border: 1px solid rgba(255,255,255,0.3);
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+  margin-bottom: 20px;
+
+}
+label ,span,h2{
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.3);
+   font-family: Arial, sans-serif;
+}
+
+/* Footer Styling */
+footer {
+  background-color: #1d1c1c;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 15px;
+}
